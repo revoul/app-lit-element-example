@@ -1,0 +1,26 @@
+{
+  "name": "start-lit-element",
+  "version": "1.0.0",
+  "description": "start-lit-element",
+  "repository": "https://github.com/PolymerLabs/start-lit-element.git",
+  "main": "start-lit-element.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all -p serve watch",
+    "serve": "polymer serve --port=8081",
+    "watch": "browser-sync start --proxy=localhost:8081 --port=8080 --files='src/**/*.*', 'index.html', '*.js'",
+    "cypress:open": "cypress open"
+  },
+  "author": "The Polymer Authors",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "latest",
+    "lit-element": "latest",
+    "lit-redux-router": "^0.5.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "cypress": "^3.1.4",
+    "npm-run-all": "^4.1.5"
+  }
+}
